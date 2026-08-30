@@ -25,12 +25,21 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 ### Programa
 
 | Aula (data)     | Conteúdo | Capítulo sugerido |
-|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|
 | 1 (10/8) | Introdução e breve revisão de inferência | Wasserman Cap 6; Fahrmeir Cap 2.1-2.2 e apêndices |
 | 2 (12/8) |  Modelo linear simples: Estimação | Wasserman Cap 6; Fahrmeir Cap 3.2 e apêndices |
 | 3 (17/8) | Modelo linear simples: Inferência | Fahrmeir Cap 3.3 |
 | 4 (19/8) | Modelo linear múltiplo (Estimaçao e inferência) | Fahrmeir Cap 3.2, 3.3 e apêndices |
 | 5 (24/8) | Propriedades dos resíduos | Fahrmeir Cap 3.2 e apêndices |
+| 6 (31/8) | Exemplos de análises [slides](handouts/modelo_linear1.pdf) | Fahrmeir Cap 3.1-3.3 |
+| 7 (02/9) |  |  |
+
+## Práticas e exercícios
+
+| Data      | Códigos em R e dados   |
+|:-----------|:----------------------------|
+| 31/8/2026  | [Pratica:](praticas/) modelo_linear1.r; Dados: dieta.csv, dmft.csv, shhs.csv |
+
 
 
 ### Listas
