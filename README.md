@@ -32,7 +32,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 4 (19/8) | Modelo linear múltiplo (Estimaçao e inferência) | Fahrmeir Cap 3.2, 3.3 e apêndices |
 | 5 (24/8) | Propriedades dos resíduos | Fahrmeir Cap 3.2 e apêndices |
 | 6 (31/8) | Exemplos de análises [slides](handouts/modelo_linear1.pdf) | Fahrmeir Cap 3.1-3.3 |
-| 7 (02/9) |  |  |
+| 7 (02/9) | Continuação dos exemplos de análises  |  |
 
 ## Práticas e exercícios
 
@@ -46,6 +46,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 
 | Lista    | Tópico | Data para entrega | 
 |:---|:---|:---|
+| [Lista 1](listas/l1.pdf) | Modelos lineares | -- |
 
 
 

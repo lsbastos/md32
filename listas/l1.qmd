@@ -1,0 +1,24 @@
+---
+title: "Lista 1: Modelos estatísticos"
+author: "Leo Bastos (Impa Tech)"
+format: pdf
+editor: visual
+---
+
+1.  No modelo linear simples, $Y_i \sim N( \alpha + x_i \beta, \sigma^2)$, $i=1,2,\ldots,n$ e $Y_i \perp Y_j$ , $\forall i \neq j$, encontre o estimador de máxima verossimilhança (EMV) para $(\alpha, \beta, \sigma^2)$.
+
+2.  No modelo linear múltiplo, $Y = X\beta + e$, $e \sim N_n(0, \sigma^2 I_n)$, mostre que o EMV para $\beta$ é igual ao estimador de mínimos quadrados. Ambos iguais a $\hat\beta = (X'X)^{-1}X'Y$.
+
+3.  Mostre que $\hat\beta$ é não viesado e que sua variância é dada por $\sigma^2 (X'X)^{-1}$.
+
+4.  Escreva um teste de hipóteses com nível de significância de 5% para testar as hipóteses $H_0$: $\beta_k = b$ versus $H_A$: $\beta_k \neq b$.
+
+5.  Seja $x^*$ um vetor de covariáveis de uma nova observação que gostaríamos de prever. Suponha que $(Y_1, X_1), (Y_2, X_2), \ldots, (Y_n,X_n)$ são observações desse evento estocástico. Usando os dados observados, um modelo linear múltiplo foi ajustado. Assim podemos prever a resposta $Y^*$ condicional aos dados e a $X=x^*$ usando um modelo linear, ou seja, $$[Y^* \mid X = x^*] = (x^*)^T \beta + e.$$
+
+    i.  Estime $Y^*$.
+    ii. Calcule $E[Y^* \mid X = x^*]$ e $V[Y^* \mid X = x^*]$.
+    iii. Construa um intervalo de confiança de 95% para $Y^*$.
+
+6.  Suponha que uma colônia de bactérias, em um certo intervalo de tempo $(0,T)$ cresça exponencialmente segundo a relação
+$$POP_t = POP_0 (1 + r)^t$$
+onde $POP_t$ é o total de bactérias no instante $t \in (0,T)$, $POP_0$ é a população inicial da colônia (desconhecida) e $r$ é a taxa de crescimento. Suponha que $n$ experimentos partindo de colônias identicas foram realizados. E em cada experimento $i$, foi contabilizado o tamanho populacional contabilizado em um tempo $t_i \in (0,T)$. Ou seja, temos pares $(POP_{t_i}, t_i)$ independentes com $i=1,2,\ldots,n$. Usando um modelo linear estime $POP_0$ e $r$.
