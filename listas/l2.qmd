@@ -1,0 +1,62 @@
+---
+title: "Lista 2: Modelos estatísticos"
+author: "Leo Bastos (Impa Tech)"
+format: pdf
+editor: visual
+---
+
+1.  Seja a seguinte saíde de um modelo linear, escrito informalmente como $Y \sim 1 + X_1 + X_2$ , onde $X_1$ é uma varíavel contínua e $X_2$ uma variável categória com 3 níveis (A, B e C). Uma amostra $\{(Y_i,X_{1,i},X_{2,i})\},$ $i=1,2,\ldots,n=100$ foi coletado e seguinte modelo foi ajustado:
+
+    ```{r echo=FALSE}
+    #| label: tbl-mytable
+    #| tbl-cap: Estimativas do modelo linear para 100 observações simuladas.
+    #| tbl-pos: H
+
+
+    n = 100
+    X1 <- runif(n)
+    X2 <- sample(c("A", "B", "C"), size = n, replace = T, prob = c(.3, .2, .5)) |> factor()
+    X2.dummy <- model.matrix(~X2-1)
+    dados <- data.frame(x1 = X1,
+                        x2 = X2,
+                        y = 1 + 2*X1 - X2.dummy[,2] + 2*X2.dummy[,3] + rnorm(n,0,.5)
+    )
+
+    modelo0 <- lm(y ~ x1 + x2, data = dados)
+
+    modelo0 |> 
+      gtsummary::tbl_regression() |> 
+      gtsummary::as_gt()|>
+      gt::tab_options(
+        table.width = gt::pct(75)
+      )
+
+    ```
+
+    i.  Escreva a equação do modelo
+
+    ii. Interpre os coeficientes em termos de valor esperado para o desfecho $Y$.
+
+    iii. Quais são as suposições do modelo para que possamos fazer inferência a respeitos dos parâmetros do modelo?
+
+    iv. Uma nova obversavação vai ser realizada com $X_1=0.5$ e $X_2=B$, qual o valor predito? Podemos calcular um intervalo? Se sim, calcule. Se não, diga o que falta para calcular.
+
+    v.  Suponha que queremos testar $H_0: \beta_1 = 1$ versus $H_A: \beta_1 \neq 1$. Podemos realizar tal teste? Se sim, faça. Se não, diga o que falta para realizar o teste.
+
+2.  Mostre que os resíduos, definidos por $\hat{e} = y - X\hat{\beta}$ , não são independentes.
+
+3.  Considere um modelo linear $Y = X\beta + e$, com $e\sim N_n(0,\sigma^2 I_n)$ e variância $\sigma^2$ conhecida. Mostre que usando uma priori imprópria $p(\beta)\propto 1$ leva a uma posteriori Normal $p$-variada com média $b=(X^TX)^{-1}X^TY$ e matriz de variâncias $V_B= \sigma^2 (X^TX)^{-1}$.
+
+4.  Regressão segmentada. Suponha que estamos a avaliando o volume de produção de um determinado produto, $Y$, segundo a temperatura média da região, $T$. Sabe-se que sob condições ótimas de temperatura $T \in (t_1,t_2)$, a produção é estável, enquanto para temperaturas menores que $t_1$ ou maiores que $t_2$ a produção cai linearmente. Suponha que temos uma base de dados de uma região contendo $n$ medidas de volume de produção e sua respectiva temperatura média, ou seja $(Y_1,T_1),(Y_2,T_2),\ldots,(Y_n,T_n)$, com $n_1$ observações com temperaturas médias menores que $t_1$, $n_2$ observações com temperaturas médias maiores que $t_2$, e $n_3=n-n_1-n_2$ observações dentro da condição ótima de temperatura.
+
+    i.  Esboce um gráfico da produção $Y$ e temperatura $T$.
+
+    ii. Assuma que $t_1$ e $t_2$ são conhecidos e proponha um modelo estatístico que forneça a média do volume de produção no período ótimo, e quantifique as taxas de queda no volume de produção fora do período ótimo de produção.
+
+    iii. Se $t_1$ e $t_2$ forem desconhecidos, como podemos fazer inferência para estimar média do volume de produção no período ótimo e as taxas de queda fora do período ótimo?
+
+5.  Agregador de pesquisas. Como podemos usar um modelo linear para estimar a proporção de votos de um candidato a presidente da república no dia da eleição usando dados de pesquisas eleitorias? Quais as limitações e suposições envolvidas?
+
+6.  Proponha um roteiro de análise de dados usando um modelo linear para explicar o comportamento de uma variável resposta $Y$. Partindo de um banco organizado com $n$ observações, uma variável resposta $Y$ e $p$ variáveis explicativas.
+
+7.  Quais são os principais problemas ao ajustar um modelo linear quando a resposta é binária?

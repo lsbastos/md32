@@ -19,6 +19,4 @@ editor: visual
     ii. Calcule $E[Y^* \mid X = x^*]$ e $V[Y^* \mid X = x^*]$.
     iii. Construa um intervalo de confiança de 95% para $Y^*$.
 
-6.  Suponha que uma colônia de bactérias, em um certo intervalo de tempo $(0,T)$ cresça exponencialmente segundo a relação
-$$POP_t = POP_0 (1 + r)^t$$
-onde $POP_t$ é o total de bactérias no instante $t \in (0,T)$, $POP_0$ é a população inicial da colônia (desconhecida) e $r$ é a taxa de crescimento. Suponha que $n$ experimentos partindo de colônias identicas foram realizados. E em cada experimento $i$, foi contabilizado o tamanho populacional contabilizado em um tempo $t_i \in (0,T)$. Ou seja, temos pares $(POP_{t_i}, t_i)$ independentes com $i=1,2,\ldots,n$. Usando um modelo linear estime $POP_0$ e $r$.
+6.  Suponha que uma colônia de bactérias, em um certo intervalo de tempo $(0,T)$ cresça exponencialmente segundo a relação $$POP_t = POP_0 (1 + r)^t$$ onde $POP_t$ é o total de bactérias no instante $t \in (0,T)$, $POP_0$ é a população inicial da colônia (desconhecida) e $r$ é a taxa de crescimento. Suponha que $n$ experimentos partindo de colônias identicas foram realizados. E em cada experimento $i$, foi contabilizado o tamanho populacional contabilizado em um tempo $t_i \in (0,T)$. Ou seja, temos pares $(POP_{t_i}, t_i)$ independentes com $i=1,2,\ldots,n$. Usando um modelo linear estime $POP_0$ e $r$.
