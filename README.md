@@ -35,6 +35,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 7 (02/09) | Continuação dos exemplos de análises  |  |
 | - (07/09) | Feriado  | - |
 | 8 (09/09) | Diagnósticos (outliers) [slides](handouts/2_diagnosticos.pdf)  | Fahrmeir Cap 3.4 |
+| 9 (14/09) | Dados binários - modelo logístico | Fahrmeir Cap 5.1 |
 
 ## Práticas e exercícios
 
@@ -50,6 +51,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | Lista    | Tópico | Data para entrega | 
 |:---|:---|:---|
 | [Lista 1](listas/l1.pdf) | Modelos lineares | -- |
+| [Lista 2](listas/l2.pdf) | Modelos lineares | -- |
 
 
 
