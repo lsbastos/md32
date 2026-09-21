@@ -36,6 +36,10 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | - (07/09) | Feriado  | - |
 | 8 (09/09) | Diagnósticos (outliers) [slides](handouts/2_diagnosticos.pdf)  | Fahrmeir Cap 3.4 |
 | 9 (14/09) | Dados binários - modelo logístico | Fahrmeir Cap 5.1 |
+| 10 (16/09) | Revisão AV1 | - |
+| 11 (21/09) | AV1 | [Trabalho para dia 28/9](listas/t1.pdf) |
+| - (24/09) | Semana de AV1 |  |
+| 12 (28/09) | Correção da AV1 e modelo logístico | - |
 
 ## Práticas e exercícios
 
@@ -52,6 +56,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 |:---|:---|:---|
 | [Lista 1](listas/l1.pdf) | Modelos lineares | -- |
 | [Lista 2](listas/l2.pdf) | Modelos lineares | -- |
+| [T 1](listas/t1.pdf) | Análise de dados para a AV1 | 28/9 |
 
 
 
