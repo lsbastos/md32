@@ -1,0 +1,38 @@
+---
+title: "Trabalho prático da disciplina MD32 Modelos estatísticos"
+author: "Leo Bastos (Impa Tech)"
+format: pdf
+editor: visual
+---
+
+Com o objetivo de quantificar a relação de dependência (associação) entre o nível de glicemia no sangue e o índice de massa corpórea (IMC) em pessoas de uma determinada população, um estudo foi desenhado e algumas informações de 142 adultos está contida no banco `glicemia_h.csv`.
+
+Para a análise considere como variável resposta a medida de glicemia em jejum (`glicemia`) e, de acordo com o objetivo, a principal variável explicativa é o IMC (`imc`). Outras variáves importantes para explicar foram incluídas:
+
+- `idade`: Idade do participante (em anos)
+
+- `atividade_fisica`: Tempo médio por semana de atividade física moderada (em minutos)
+
+- `sexo`: Sexo (Masculino ou feminino)
+
+- `historico_familiar`: Histórico familiar de diabetes mellitus (Sim ou não)
+
+- `hipertensao`: Diagnóstico de hipertensão (Sim ou não)
+
+Analise os dados, gerando um relatório respondendo os pontos abaixo tendo em vista o objetivo do estudo, que é quantificar a relação entre a glicemia e o IMC:
+
+1.  Faça uma análise descritiva das variáveis incluindo algumas análises bivariadas mostrando a relação da variável resposta com as variáveis explicativas. Comente os principais resultados.
+
+2.  Verifique se há multicolinearidade nos dados.
+
+3.  Ajuste diferentes modelos lineares para explicar a relação entre a glicemia e o IMC. Compare os modelos segundo algum (ou alguns critérios) e selecione o modelo mais adequado. Monte uma tabela com os modelos testados e a medida (ou as medidas) de comparação de modelo escolhida(s)
+
+4.  Faça a análise de resíduos do modelo final, e verifique as suposições do modelo. Alguma suposição foi violada? Qual a implicação disso? Existem pontos influentes?
+
+5.  Escreva a equação do modelo final. Interprete o efeito do IMC na glicemia.
+
+6.  Compare o efeito do IMC na glicemia do modelo final com o efeito encontrado com o modelo simples. Caso o modelo simples não tenha sido escolhido como o modelo final, houve mudança?
+
+7.  Baseado nos resultados desse estudo, podemos inferir que o impacto de mudanças no IMC de uma pessoa dessa população vai implicar em mudanças na glicemia dadas pela equação do modelo final?
+
+Subir no Google Classroom um arquivo individual em pdf no formato de relatório respondendo os sete itens acima.
