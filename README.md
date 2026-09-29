@@ -39,7 +39,8 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 10 (16/09) | Revisão AV1 | - |
 | 11 (21/09) | AV1 | [Trabalho para dia 28/9](listas/t1.pdf) |
 | - (24/09) | Semana de AV1 |  |
-| 12 (28/09) | Correção da AV1 e modelo logístico | - |
+| 12 (28/09) | Vista da AV1 e modelo logístico | - |
+| 13 (30/09) | Modelo logístico - exemplos | (handouts/3_modelo_logistico.pdf) |
 
 ## Práticas e exercícios
 
@@ -47,6 +48,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 |:-----------|:----------------------------|
 | 31/08/2026  | [Pratica:](praticas/) 1_modelo_linear.r; Dados: dieta.csv, dmft.csv, shhs.csv |
 | 09/09/2026  | [Pratica:](praticas/) 2_diagnosticos.r |
+| 30/09/2026  | [Pratica:](praticas/) 3_modelo_logistico.r; Dados: birthweight.data, DUsifilis.csv  | 
 
 
 
@@ -56,7 +58,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 |:---|:---|:---|
 | [Lista 1](listas/l1.pdf) | Modelos lineares | -- |
 | [Lista 2](listas/l2.pdf) | Modelos lineares | -- |
-| [T 1](listas/t1.pdf) | Análise de dados para a AV1 | 28/9 |
+| [T 1](listas/t1.pdf) | Análise de dados para a AV1 | 29/9 |
 
 
 
