@@ -41,6 +41,10 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | - (24/09) | Semana de AV1 |  |
 | 12 (28/09) | Vista da AV1 e modelo logístico | - |
 | 13 (30/09) | Modelo logístico - exemplos | (handouts/3_modelo_logistico.pdf) |
+| 14 (05/10) | Definicao e propriedades da família exponencial  | Fahrmeir Cap 5.4 |
+| 15 (07/10) | Modelo linear generalizado - Estimação  | Fahrmeir Cap 5.4 |
+| 16 (12/10) | Feriado | - |
+
 
 ## Práticas e exercícios
 
