@@ -1,0 +1,24 @@
+---
+title: "Lista 3: Modelos estatísticos"
+author: "Leo Bastos (Impa Tech)"
+format: pdf
+editor: visual
+---
+
+1.  A função de densidade de uma distribuição da família exponencial é dada por
+
+    $$
+    f(y \mid \theta, \phi) = \exp\left\{ \frac{y\theta - b(\theta)}{a(\phi)} + c(y,\phi)\right\}
+    $$
+
+    Mostre que:
+
+    i.  a distribuição Binomial com parâmetros $(n,\pi)$ pertence à família exponencial (Encontre $\theta$ como função de $\pi$, $a(\phi)$, $b(\theta)$ e $c(y,\phi)$).
+
+    ii. a distribuição de Poisson com parâmetro $\lambda$ é membro da família exponencial. ( Note que $\theta$ agora deve ser função de $\lambda$ )
+
+    iii. a distribuição Gama com parâmetros $(\mu,\nu)$ com f.d.p. $$f(y \mid \mu, \nu) = \frac{(\nu/\mu)^\nu}{\Gamma(\nu)}y^{\nu-1}e^{-y\frac{\nu}{\mu}$$ tal que $E[Y]=\mu$ e $V(Y)=\mu/\nu$/.
+
+2.  Mostre que o valor esperado de uma distribuição da família exponencial é dado por $E[Y]=b'(\theta)$. E calcule o valor esperado das densidades do item anterior.
+
+3.  Em um modelo linear generalizado, temos que uma função, $g$, do valor esperado de $Y$ , que segue uma distribuição da família exponencial, pode ser representado por um componente sistemático $\eta = x^T\beta$ .
