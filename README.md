@@ -44,6 +44,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 14 (05/10) | Definicao e propriedades da família exponencial  | Fahrmeir Cap 5.4 |
 | 15 (07/10) | Modelo linear generalizado - Estimação  | Fahrmeir Cap 5.4 |
 | 16 (12/10) | Feriado | - |
+| 17 (14/10) | Modelo linear generalizado bayesiano | Fahrmeir Cap 5.6 |
 
 
 ## Práticas e exercícios
