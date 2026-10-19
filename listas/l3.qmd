@@ -17,8 +17,29 @@ editor: visual
 
     ii. a distribuição de Poisson com parâmetro $\lambda$ é membro da família exponencial. ( Note que $\theta$ agora deve ser função de $\lambda$ )
 
-    iii. a distribuição Gama com parâmetros $(\mu,\nu)$ com f.d.p. $$f(y \mid \mu, \nu) = \frac{(\nu/\mu)^\nu}{\Gamma(\nu)}y^{\nu-1}e^{-y\frac{\nu}{\mu}$$ tal que $E[Y]=\mu$ e $V(Y)=\mu/\nu$/.
+    iii. a distribuição Gama com parâmetros $(\mu,\nu)$ com f.d.p. $$f(y \mid \mu, \nu) = \frac{(\nu/\mu)^\nu}{\Gamma(\nu)}y^{\nu-1}e^{-y\frac{\nu}{\mu}}$$ tal que $E[Y]=\mu$ e $V(Y)=\mu/\nu$.
 
-2.  Mostre que o valor esperado de uma distribuição da família exponencial é dado por $E[Y]=b'(\theta)$. E calcule o valor esperado das densidades do item anterior.
+2.  Mostre que o valor esperado de uma distribuição da família exponencial é dado por $E[Y]=b'(\theta)$ e variância $V(Y) = a(\phi)b''(\theta)$. E calcule média e variância usando a parametrização $(\theta,\phi)$ e mostre a equivalência usando os parâmetros de cada distribuição, ex. no item (i) os parâmetros são $(n,\pi)$.
 
-3.  Em um modelo linear generalizado, temos que uma função, $g$, do valor esperado de $Y$ , que segue uma distribuição da família exponencial, pode ser representado por um componente sistemático $\eta = x^T\beta$ .
+3.  Seja $Y_1,Y_2,\ldots,Y_n$ variáveis aleatórias independentes com distribuição Bernoulli com parâmetro $\theta_i$. Seja $\mathbf{x_i}=(x_1x_2,\ldots,x_n)^T$ um vetor com informações relacionadas à contagem $Y_i$ com $g(\theta_i) = \mathbf{x}_i^T\beta$. Como a Bernoulli é membro da família exponencial, logo a modelagem de dados é um MLG, com essas informações responda:
+
+    i.  Qual a função de ligação canônica?
+
+    ii. Usando a função de ligação canônica e descreva o algoritmo IWLS para inferir a respeito de $\beta$.
+
+    iii. Implemente o algoritmo usando acima e estime $\beta = (\beta_0, \beta_1)$ a partir dos seguintes dados:\
+
+         |     |     |     |     |     |     |     |     |     |     |     |     |     |
+         |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+         | Y:  | 1   | 1   | 0   | 1   | 0   | 1   | 1   | 1   | 1   | 0   | 1   | 1   |
+         | X:  | 0   | 0   | 0   | 0   | 1   | 0   | 1   | 1   | 1   | 0   | 1   | 1   |
+
+    iv. Calcule um intervalo de confiança de 95% para $\beta_0$ e $\beta_1$.
+
+4.  Suponha agora que no exemplo anterior, a resposta é um resultado de uma aproximação para uma certa medida. A verdadeira variável de interesse, $Z$ é não observada, mas conhecemos a sensibilidade \$s = P(Y=1 \\mid Z=1)\$ e especificidade $s = P(Y=0  \mid Z=0)$ do teste. suponha que $logit(P(Z=1)) = \mathbf{x}_i^T\beta$.
+
+    i.  Encontre a função resposta e função de ligação para a variável $Y$ que permita a inclusão da incerfteza da resposta (sensibilidade e especificificidade).
+
+    ii. Implemente o algoritmo IWLS.
+
+    iii. Aplique no exemplo anterior e compare as estimativas.
