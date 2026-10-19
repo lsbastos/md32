@@ -64,6 +64,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | [Lista 1](listas/l1.pdf) | Modelos lineares | -- |
 | [Lista 2](listas/l2.pdf) | Modelos lineares | -- |
 | [T 1](listas/t1.pdf) | Análise de dados para a AV1 | 29/9 |
+| [Lista 3](listas/l3.pdf) | Modelos lineares generalizados | -- |
 
 
 

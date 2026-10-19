@@ -7,9 +7,7 @@ editor: visual
 
 1.  A função de densidade de uma distribuição da família exponencial é dada por
 
-    $$
-    f(y \mid \theta, \phi) = \exp\left\{ \frac{y\theta - b(\theta)}{a(\phi)} + c(y,\phi)\right\}
-    $$
+    $$f(y \mid \theta, \phi) = \exp\left\{ \frac{y\theta - b(\theta)}{a(\phi)} + c(y,\phi)\right\}$$
 
     Mostre que:
 
@@ -36,10 +34,10 @@ editor: visual
 
     iv. Calcule um intervalo de confiança de 95% para $\beta_0$ e $\beta_1$.
 
-4.  Suponha agora que no exemplo anterior, a resposta é um resultado de uma aproximação para uma certa medida. A verdadeira variável de interesse, $Z$ é não observada, mas conhecemos a sensibilidade \$s = P(Y=1 \\mid Z=1)\$ e especificidade $s = P(Y=0  \mid Z=0)$ do teste. suponha que $logit(P(Z=1)) = \mathbf{x}_i^T\beta$.
+4.  Suponha agora que no exemplo anterior, a resposta é um resultado de uma aproximação para uma certa medida. A verdadeira variável de interesse, $Z$ é não observada, mas conhecemos a sensibilidade $s = P(Y=1 \mid Z=1)$ e especificidade $e = P(Y=0  \mid Z=0)$ do teste. suponha que $logit(P(Z=1)) = \mathbf{x}_i^T\beta$.
 
-    i.  Encontre a função resposta e função de ligação para a variável $Y$ que permita a inclusão da incerfteza da resposta (sensibilidade e especificificidade).
+    i.  Encontre a função resposta e função de ligação para a variável $Y$ que permita a inclusão da incerfteza da resposta (sensibilidade, $s$, e especificificidade, $e$).
 
-    ii. Implemente o algoritmo IWLS.
+    ii. Implemente o algoritmo IWLS, para fixados valores de \$(s,e)\$
 
-    iii. Aplique no exemplo anterior e compare as estimativas.
+    iii. Aplique no exemplo anterior e compare as estimativas dos seguintes cenários: $C1: (s=1,e=1)$, $C2: (s=1,e=0.95)$, $C3: (s=0.95,e=1)$ e $C4: (s=0.95,e=0.95)$.
