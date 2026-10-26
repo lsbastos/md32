@@ -40,11 +40,15 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 11 (21/09) | AV1 | [Trabalho para dia 28/9](listas/t1.pdf) |
 | - (24/09) | Semana de AV1 |  |
 | 12 (28/09) | Vista da AV1 e modelo logístico | - |
-| 13 (30/09) | Modelo logístico - exemplos | (handouts/3_modelo_logistico.pdf) |
+| 13 (30/09) | Modelo logístico - exemplos | [slides](handouts/3_modelo_logistico.pdf) |
 | 14 (05/10) | Definicao e propriedades da família exponencial  | Fahrmeir Cap 5.4 |
 | 15 (07/10) | Modelo linear generalizado - Estimação  | Fahrmeir Cap 5.4 |
 | 16 (12/10) | Feriado | - |
 | 17 (14/10) | Modelo linear generalizado bayesiano | Fahrmeir Cap 5.6 |
+| 18 (19/10) | Modelo linear generalizado bayesiano | Fahrmeir Cap 5.6 |
+| 19 (21/10) | Medidas de associção em modelos logísticos | [slides](handouts/4_epidemio.pdf) e artigo [Brasil et al. 2026](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00493-7/fulltext) |
+| 20 (26/10) | Introdução à Análise de sobrevivência | ISLR, James et al.  Cap 11 |
+| 20 (28/10) | Modelo de regressão para dados de sobrevivência | ISLR, James et al.  Cap 11 |
 
 
 ## Práticas e exercícios
