@@ -5,11 +5,13 @@ format: typst
 editor: visual
 ---
 
+Esse trabalho é parte da avaliação AV2, para ser entregue até dia 18/11 no classroom.
+
 Um estudo experimental foi realisado com 432 condenados que foram libertados de prisões estaduais americanas do estado de Maryland na década de 1970. Metade desses condenados foram aleatoriamente selecionados e um auxílio financeiro lhes foi oferecido. Enquanto a outra metade nada recebeu. Eles foram acompanhados por 1 ano ou até serem presos novamente.
 
 O objetivo dessa análise é avaliar se o auxílio financeiro reduz as chances ou o risco de que os condenados que forma libertados sejam presos novamente.
 
-Os dados estão disponíveis no pacote `carData` do R, a descrição das variáveis se encontram em `?carData::Rossi`.
+Os dados estão no github (`listas/t4_data.csv`) foram disponíveis no pacote `carData` do R, a descrição das variáveis se encontram em `?carData::Rossi`.
 
 Roteiro de análise:
 
