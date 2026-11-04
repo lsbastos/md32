@@ -1,0 +1,35 @@
+---
+title: "Lista 4: Modelos estatísticos (Análise de sobrevivência)"
+author: "Leo Bastos (Impa Tech) e Ricardo Arruda (IMPA)"
+format: pdf
+editor: visual
+---
+
+Notação. $T \geq 0$ é o tempo até o evento e $C \geq 0$ o tempo de censura; observa-se $Y = \min(T , C)$ e $\delta = 1\{T ≤ C\}$. $S(t) = P (T > t)$ é a função de sobrevivência, $\lambda(t) = \lim_{\Delta \to 0} P (t \leq T < t + \Delta \mid T \geq t)/ \Delta$ a função de risco e $\Lambda(t) = \int_0^t\lambda(u) du$ o risco acumulado. Supõe-se censura não informativa: $T\perp C$.
+
+1.  Seja $T$ uma v.a. contínua com densidade $f$
+
+    i. Mostre que $\lambda(t) = f(t) / S(t)$ e que $S(t) = \exp\{-Lambda(t)\}$.
+
+    ii. Para a distribuição Weibull com $S(t) = \exp\{- (\rho t)^\alpha\}$, $\rho>0$ e $\alpha>0$, encontre $f(t)$ e $h(t)$. Para quais valores da $\alpha$ o risco é crescente, decrescente e constante?
+    iii. Mostre que se, $\lambda(t)$ é constante para todo $t$. Então $P(T > t + s| T > t) = P(T > t + s)$ para todos $t>0$ e $s>0$.
+
+2. No modelo de riscos proporcionais, $\lambda(t; x) = \lambda_0(t) \exp\{x^T\beta\}$ com $\lambda_0(t)$ não especificada
+
+    i. Seja $X_j$ uma covariável binária assumindo valores 0 ou 1. Qual a interpretação de $\exp\{\beta_j\}$
+  
+    ii. Esse modelo tem intercepto? 
+  
+    iii. Mostre que $S(t;x) = S_0(t)\exp\{x^T\beta\}$, com $S_0(t) = \exp\{−\Lambda_0(t)\}$, e que $\log(-\log (S(t ; x))) = log\Lambda_0(t) + x^T\beta$. Como usar isso para checar a hipótese de riscos proporcionais com curvas de Kaplan–Meier?
+
+
+3. Suponha tempos de evento sem empates.
+
+    i. Mostre que a probabilidade de que o indivíduo $i$ falhe em $t$, dado que exatamente um indivíduo do conjunto sob risco $R(t) = \{j ∶ y_j ≥ t\}$ falha em $t$, é $\frac{e^{x_i^T\beta}}{\sum_{j \in R(t)} e^{x_j^T\beta} }$ e que ela não depende the $\lambda_0(t)$.
+
+    ii. Escreva a verossimilhança parcial e mostre que a função escore é $s(\beta) = \sum_{i:\delta_i=1}(x_i - \tilde{x}(y_i))$, em que $\tilde{x}(t)$ é a média de x em $R(t)$ ponderada por $\exp\{ x_i^T\beta \}$
+    
+4. Considere dois grupos de 6 pacientes, com tempos em meses (+ indica censura): grupo A: 6+, 7, 9+, 10, 13, 16+; grupo B: 2, 3, 4+, 5, 8, 12. Ajuste o modelo de Cox com a covariável
+grupo. Calcule a razão de riscos, avalie a significância estatística e interprete.
+
+5. Replique o exemplo da seção 11.8.1 do livro ISLR (Introduction to Statistical Learning with R). Brain Cancer Data (BrainCancer no pacote ISRL2 do R). 
