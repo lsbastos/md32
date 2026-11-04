@@ -1,12 +1,23 @@
 ---
-title: "Trabalho"
-author: "Leo Bastos"
+title: "Roteiro do trabalho da AV2"
+author: "Leo Bastos - IMPA Tech"
 format: typst
 editor: visual
 ---
 
-Um estudo experimental foi realisado com 432 condenados que foram libertados de prisões estaduais americanas do estado de Maryland na década de 1970. Metade desse condenados foram aleatoriamente selecionado e um auxílio financeiro lhes foi oferecido, enquanto a outra metade nada recebeu. Eles foram acompanhados por 1 ano ou até serem presos novamente. 
+Um estudo experimental foi realisado com 432 condenados que foram libertados de prisões estaduais americanas do estado de Maryland na década de 1970. Metade desses condenados foram aleatoriamente selecionados e um auxílio financeiro lhes foi oferecido. Enquanto a outra metade nada recebeu. Eles foram acompanhados por 1 ano ou até serem presos novamente.
 
-O objetivo desse trabalho é avaliar se o auxílio financeiro reduz as chances ou o risco de que os condenados sejam presos novamente. 
+O objetivo dessa análise é avaliar se o auxílio financeiro reduz as chances ou o risco de que os condenados que forma libertados sejam presos novamente.
 
-, `Rossi` disponíveis no pacote `carData` do R, 
+Os dados estão disponíveis no pacote `carData` do R, a descrição das variáveis se encontram em `?carData::Rossi`.
+
+Roteiro de análise:
+
+1.  Faça uma análise descritiva das variáveis, com foco no recebimento ou não de auxílio financeiro.
+2.  O evento que se quer avaliar é a volta ou não da pessoa à prisão. Para isso teremos três desfechos:
+    i.  Desfecho binário: se a pessoa foi ou não presa no período do estudo;
+    ii. Desfecho categórico: se a pessoa não foi presa em 1 ano; se a pessoa foi presa após 6 meses desde libertação ou se a pessoa foi presa nos 6 primeiros meses.
+    iii. Desfecho tempo até o evento: tempo até a pessoa ser presa, pessoas que não foram presas no período do estudo serão consideradas censuras.
+3.  Avalie a associação entre cada desfecho e variável de exposição, i.e. a variável explicativa de interesse que é o recebimento de um auxílio financeiro; Qual a conclusão para cada desfecho?
+4.  Ajuste vários modelos para cada desfecho para explicar a relação desfecho x exposição controlando por outras variáveis, selecione o modelo mais adequado para cada desfecho e interprete os coeficientes (ou uma função deles) para a variável exposição.
+5.  Conclua, baseado nos dados e nas análises realizadas, se o auxílio financeiro foi uma política eficiente de redução de chances de que ex-presos retornem a prisão em um ano.
