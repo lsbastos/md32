@@ -11,11 +11,11 @@ Notação. $T \geq 0$ é o tempo até o evento e $C \geq 0$ o tempo de censura; 
 
 1.  Seja $T$ uma v.a. contínua com densidade $f$
 
-    i.  Mostre que $\lambda(t) = f(t) / S(t)$ e que $S(t) = \exp\{-Lambda(t)\}$.
+    i.  Mostre que $\lambda(t) = f(t) / S(t)$ e que $S(t) = \exp\{-\Lambda(t)\}$.
 
     ii. Para a distribuição Weibull com $S(t) = \exp\{- (\rho t)^\alpha\}$, $\rho>0$ e $\alpha>0$, encontre $f(t)$ e $h(t)$. Para quais valores da $\alpha$ o risco é crescente, decrescente e constante?
 
-    iii. Mostre que se, $\lambda(t)$ é constante para todo $t$. Então $P(T > t + s| T > t) = P(T > t + s)$ para todos $t>0$ e $s>0$.
+    iii. Mostre que se, $\lambda(t)$ é constante para todo $t$. Então $P(T > t + s| T > t) = P(T > s)$ para todos $t>0$ e $s>0$.
 
 2.  No modelo de riscos proporcionais, $\lambda(t; x) = \lambda_0(t) \exp\{x^T\beta\}$ com $\lambda_0(t)$ não especificada
 
@@ -23,7 +23,7 @@ Notação. $T \geq 0$ é o tempo até o evento e $C \geq 0$ o tempo de censura; 
 
     ii. Esse modelo tem intercepto?
 
-    iii. Mostre que $S(t;x) = S_0(t)\exp\{x^T\beta\}$, com $S_0(t) = \exp\{−\Lambda_0(t)\}$, e que $\log(-\log (S(t ; x))) = log\Lambda_0(t) + x^T\beta$. Como usar isso para checar a hipótese de riscos proporcionais com curvas de Kaplan–Meier?
+    iii. Mostre que $S(t;x) = S_0(t)^{\exp\{x^T\beta\}}$, com $S_0(t) = \exp\{−\Lambda_0(t)\}$, e que $\log(-\log (S(t ; x))) = log\Lambda_0(t) + x^T\beta$. Como usar isso para checar a hipótese de riscos proporcionais com curvas de Kaplan–Meier?
 
 3.  Suponha tempos de evento sem empates.
 
@@ -34,4 +34,3 @@ Notação. $T \geq 0$ é o tempo até o evento e $C \geq 0$ o tempo de censura; 
 4.  Considere dois grupos de 6 pacientes, com tempos em meses (+ indica censura): grupo A: 6+, 7, 9+, 10, 13, 16+; grupo B: 2, 3, 4+, 5, 8, 12. Ajuste o modelo de Cox com a covariável grupo. Calcule a razão de riscos, avalie a significância estatística e interprete.
 
 5.  Replique o exemplo da seção 11.8.1 do livro ISLR (Introduction to Statistical Learning with R). Brain Cancer Data (BrainCancer no pacote ISRL2 do R).
-
