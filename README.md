@@ -48,7 +48,13 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 18 (19/10) | Modelo linear generalizado bayesiano | Fahrmeir Cap 5.6 |
 | 19 (21/10) | Medidas de associção em modelos logísticos | [slides](handouts/4_epidemio.pdf) e artigo [Brasil et al. 2026](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00493-7/fulltext) |
 | 20 (26/10) | Introdução à Análise de sobrevivência | ISLR, James et al.  Cap 11 |
-| 20 (28/10) | Modelo de regressão para dados de sobrevivência | ISLR, James et al.  Cap 11 |
+| 21 (28/10) | Modelo de regressão para dados de sobrevivência | ISLR, James et al.  Cap 11 |
+| - (02/11) | Feriado  | - |
+| 22 (04/11) | Modelo multinomial e ordinal | Fahrmeir Cap 6 |
+| 23 (09/11) | Aula no laboratório | - |
+| 24 (11/11) | Aula no laboratório | - |
+| - (16/11) | Semana de AV2 |  |
+
 
 
 ## Práticas e exercícios
@@ -58,6 +64,7 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | 31/08/2026  | [Pratica:](praticas/) 1_modelo_linear.r; Dados: dieta.csv, dmft.csv, shhs.csv |
 | 09/09/2026  | [Pratica:](praticas/) 2_diagnosticos.r |
 | 30/09/2026  | [Pratica:](praticas/) 3_modelo_logistico.r; Dados: birthweight.data, DUsifilis.csv  | 
+| 09/11/2026  | [Pratica:](praticas/) script_aula_9_Nov.r; Dados: covidRJ2022.csv  | 
 
 
 
@@ -69,6 +76,8 @@ Modelo de regressão linear, estimação, interpretação, diagnósticos, escolh
 | [Lista 2](listas/l2.pdf) | Modelos lineares | -- |
 | [T 1](listas/t1.pdf) | Análise de dados para a AV1 | 29/9 |
 | [Lista 3](listas/l3.pdf) | Modelos lineares generalizados | -- |
+| [Lista 4](listas/l4.pdf) | Modelos de sobrevivência | -- |
+| [T 2](listas/t2.pdf) | Análise de dados para a AV2 | 20/11* |
 
 
 
